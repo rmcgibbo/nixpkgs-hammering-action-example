@@ -19,4 +19,4 @@ jobs:
           find . -exec realpath {} \;
       - uses:  rmcgibbo/nixpkgs-hammering-action@master
         with:
-          nixpkgs_path: ./pkgs
+          nixpkgs_path: ./.
