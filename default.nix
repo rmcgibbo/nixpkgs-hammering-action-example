@@ -1,5 +1,5 @@
 { overlays ? []
-, pkgs ? import <nixpkgs> {}
+, pkgs ? import <nixpkgs> { overlays = overlays; }
 }:
 {
   attribute-ordering = pkgs.recurseIntoAttrs (pkgs.callPackage ./pkgs/attribute-ordering { });
