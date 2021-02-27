@@ -16,7 +16,7 @@ jobs:
           name: nixpkgs-hammering-action     
       - name: Look around
         run: |
-          find .
+          find . -exec realpath {} \;
       - uses:  rmcgibbo/nixpkgs-hammering-action@master
         with:
           nixpkgs_path: ./pkgs
