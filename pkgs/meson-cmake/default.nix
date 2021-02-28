@@ -15,5 +15,3 @@ stdenv.mkDerivation {
     ninja # Meson does not support make backend.
   ];
 }
-
-
