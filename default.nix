@@ -1,6 +1,6 @@
-let
-  pkgs = import <nixpkgs> {};
-in  
+{ overlays ? []
+, pkgs ? import <nixpkgs> {}
+}:
 {
   attribute-ordering = pkgs.recurseIntoAttrs (pkgs.callPackage ./pkgs/attribute-ordering { });
   attribute-typo = pkgs.recurseIntoAttrs (pkgs.callPackage ./pkgs/attribute-typo { });
