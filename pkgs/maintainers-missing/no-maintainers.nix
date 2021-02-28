@@ -7,6 +7,5 @@ stdenv.mkDerivation {
 
   src = ../fixtures/make;
 
-  meta = with lib; {
-  };
+  meta = with lib; { };
 }
